@@ -22,7 +22,6 @@ let name = 'anamika';
 let age = 19;
 let isApproved = false;
 let firstName = undefined;
-let selectedColor = null;
 
 let person = {
     name: 'anamika'
@@ -30,9 +29,22 @@ let person = {
 console.log(person)
 console.log(typeof(person))
 
-let x = 'Anamika';
-let y = x;
- 
-x = 'ancheril';
-console.log(x);
-console.log(y);
+
+
+let selectedColor = ['red','blue'];
+console.log(selectedColor.length);
+
+//performing a function
+
+function greet(name, lastname) {
+    console.log('hello '+ name +''+lastname);
+
+}
+greet('Anamika','Aksan');
+
+//calculating a value
+function sqaure(number) {
+    return number * number;
+}
+
+console.log(sqaure(2));
