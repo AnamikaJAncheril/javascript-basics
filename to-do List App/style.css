@@ -33,7 +33,72 @@
     width: 50px;
     margin-left: 10px;
 }
-.todo-app{
+.todo-app:hover{
     box-shadow: 1px 2px 3px black;
 }
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+    font-size: 14px;
+}
 
+button{
+    border: none;
+    outline: none;
+    color: aliceblue;
+    padding: 16px 50px;
+    background-color: green;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: lightblue;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(http://pluspng.com/img-png/circle-png-circle-png-hd-1600.png);
+    background-size: cover;
+    background-position: center;
+    top:8px;
+    left: 16px;
+
+}
+ul li.checked{
+    color: darkgray;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    color: #666;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/858/556/original/green-check-mark-icon-with-circle-tick-box-check-list-circle-frame-checkbox-symbol-sign-png.png);
+}
