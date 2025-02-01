@@ -23,7 +23,7 @@
 }
 
 .todo-app h2{
-    color: blue;
+    color: gradient;
     display: flex;
     align-items: centre;
     margin-bottom: 30px;
